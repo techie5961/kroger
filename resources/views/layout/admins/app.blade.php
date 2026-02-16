@@ -221,7 +221,7 @@
         <span>
             &copy; 2025 {{ config('app.name') }} Admins Dashboard
         </span>
-        <span>
+        <span class="display-none">
            Built and Designed by <a style="color:aqua" target="_blank" href="https://wa.me/+2349013350351">Techie Innovations</a>
         </span>
     </footer>
