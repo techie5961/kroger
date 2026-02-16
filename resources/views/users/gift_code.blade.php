@@ -18,7 +18,7 @@
         top:calc(100% - 30px);
         padding:10px;
         background:white;
-        box-shadow:5px 5px 5px rgba(0,0,0,0.1);
+        box-shadow:5px 5px 5px rgba(255,255,255,0.1);
         border-radius:10px;
         display:flex;
         flex-direction:column;
@@ -68,7 +68,7 @@
    <div class="column p-20 g-20">
     
      {{-- INFO --}}
-     <div style="box-shadow:5px 5px 5px rgba(0,0,0,0.1)" class="w-full  max-w-500 m-x-auto bg-light br-10 column p-20 g-10">
+     <div style="box-shadow:5px 5px 5px rgba(255,255,255,0.1)" class="w-full  max-w-500 m-x-auto bg-light br-10 column p-20 g-10">
         <strong class="desc">Gift Code guide</strong>
        
         

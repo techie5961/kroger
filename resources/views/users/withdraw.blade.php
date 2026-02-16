@@ -17,8 +17,8 @@
         right:20px;
         top:calc(100% - 30px);
         padding:10px;
-        background:white;
-        box-shadow:5px 5px 5px rgba(0,0,0,0.1);
+        background:var(--bg-light);
+        box-shadow:5px 5px 5px rgba(255,255,255,0.1);
         border-radius:10px;
         display:flex;
         flex-direction:column;
@@ -44,7 +44,7 @@
             </span>
         </div>
         {{-- WITHDRAWAL BALANCE --}}
-          <div style="background:rgba(255,255,255,0.4);box-shadow:0 5px 5px rgba(0,0,0,0.1)" class=" max-w-500 m-x-auto w-full p-20 column br-10">
+          <div style="background:rgba(255,255,255,0.4);box-shadow:0 5px 5px rgba(255,255,255,0.1)" class=" max-w-500 m-x-auto w-full p-20 column br-10">
             <span class="font-1">Withdrawal Balance</span>
             <strong style="font-size:2rem;">&#8358;{{ number_format(Auth::guard('users')->user()->withdrawal) }}</strong>
         </div>
@@ -53,7 +53,7 @@
             {{-- csrf token  --}}
             <input type="hidden" value="{{ @csrf_token() }}" name="_token" class="inp input">
             <label for="">Withdrawal Amount</label>
-            <div style="border:1px solid rgba(0,0,0,0.3)" class="cont w-full br-10 bg-transparent">
+            <div style="border:1px solid rgba(255,255,255,0.3)" class="cont w-full br-10 bg-transparent">
                 <input type="number" name="amount" placeholder="Enter withdrawal amount" class="w-full required inp input h-full bg-transparent border-none">
             </div>
             {{-- FEE BREAKDOWN --}}
@@ -72,9 +72,9 @@
    {{-- body --}}
    <div class="column p-20 g-20">
     {{-- BANK DETAILS --}}
-     <div style="box-shadow:5px 5px 5px rgba(0,0,0,0.1)" class="w-full  max-w-500 m-x-auto bg-light br-10 column p-20 g-10">
+     <div style="box-shadow:5px 5px 5px rgba(255,255,255,0.1)" class="w-full  max-w-500 m-x-auto bg-light br-10 column p-20 g-10">
         <strong class="desc">Bank Account Details</strong>
-        <div style="border:1px solid rgba(0,0,0,0.1);background:rgba(0,0,0,0.05)" class="w-full br-10 p-10 column g-5">
+        <div style="border:1px solid rgba(255,255,255,0.1);background:rgba(0,0,0,0.05)" class="w-full br-10 p-10 column g-5">
             <span class="break-word font-1">{{ strtoupper($bank->account_name) }}</span>
             <span class="break-word">{{ $bank->bank_name }}</span>
             <span class="break-word">{{ $bank->account_number }}</span>
@@ -87,7 +87,7 @@
 
     </div>
      {{-- WITHDRAWAL INFO --}}
-     <div style="box-shadow:5px 5px 5px rgba(0,0,0,0.1)" class="w-full  max-w-500 m-x-auto bg-light br-10 column p-20 g-10">
+     <div style="box-shadow:5px 5px 5px rgba(255,255,255,0.1)" class="w-full  max-w-500 m-x-auto bg-light br-10 column p-20 g-10">
         <strong class="desc">Withdrawal Information</strong>
         <div class="w-full row align-center g-5">
             <span class="c-green">

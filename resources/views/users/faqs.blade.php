@@ -5,13 +5,13 @@
         padding:0;
        } 
        .cont{
-        border:1px solid rgba(0,0,0,0.1) !important;
+        border:1px solid rgba(255,255,255,0.1) !important;
         background:transparent !important;
         border-radius:5px !important;
        }
        .faq{
         width:100%;
-        border:1px solid rgba(0,0,0,0.1);
+        border:1px solid rgba(255,255,255,0.1);
         padding:10px;
         display:flex;
         flex-direction:column;
@@ -71,7 +71,7 @@
             </span>
           </div>
           {{-- Answer --}}
-          <div style="font-size:0.8rem;background:rgba(0,0,0,0.05);border:1px solid rgba(0,0,0,0.1)" class="p-10 answer br-5 w-full">
+          <div style="font-size:0.8rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1)" class="p-10 answer br-5 w-full">
             <span>When you invite someone using your referral link and they invest, you earn a percentage bonus based on the platform’s referral structure. Referral rewards are designed to encourage community growth and active participation.</span>
           </div>
             
@@ -96,7 +96,7 @@
             </span>
           </div>
           {{-- Answer --}}
-          <div style="font-size:0.8rem;background:rgba(0,0,0,0.05);border:1px solid rgba(0,0,0,0.1)" class="p-10 answer br-5 w-full">
+          <div style="font-size:0.8rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1)" class="p-10 answer br-5 w-full">
             <span>Yes. Withdrawals are available once your investment or rewards meet the minimum withdrawal requirement. All withdrawals are manually reviewed to ensure security and accuracy.</span>
           </div>
             
@@ -121,7 +121,7 @@
             </span>
           </div>
           {{-- Answer --}}
-          <div style="font-size:0.8rem;background:rgba(0,0,0,0.05);border:1px solid rgba(0,0,0,0.1)" class="p-10 answer br-5 w-full">
+          <div style="font-size:0.8rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1)" class="p-10 answer br-5 w-full">
             <span>Users can request withdrawals in the following amounts, subject to balance and approval:
 1k, 5k, 10k, 50k, 100k, 500k, 800k, 1m, 5m, and 8m.</span>
           </div>
@@ -147,7 +147,7 @@
             </span>
           </div>
           {{-- Answer --}}
-          <div style="font-size:0.8rem;background:rgba(0,0,0,0.05);border:1px solid rgba(0,0,0,0.1)" class="p-10 answer br-5 w-full">
+          <div style="font-size:0.8rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1)" class="p-10 answer br-5 w-full">
             <span>Yes. We prioritize data protection and user privacy. All personal and financial information is handled with strict confidentiality and security measures.</span>
           </div>
             
@@ -173,7 +173,7 @@
             </span>
           </div>
           {{-- Answer --}}
-          <div style="font-size:0.8rem;background:rgba(0,0,0,0.05);border:1px solid rgba(0,0,0,0.1)" class="p-10 answer br-5 w-full">
+          <div style="font-size:0.8rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1)" class="p-10 answer br-5 w-full">
             <span>At the end of your investment period, your capital and earnings are credited according to the plan terms. You may choose to withdraw your funds or reinvest in another plan.</span>
           </div>
             

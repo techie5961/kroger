@@ -41,7 +41,7 @@
             </span>
         </div>
         {{-- DEPOSIT BALANCE --}}
-        <div style="background:rgba(255,255,255,0.4);box-shadow:0 5px 5px rgba(0,0,0,0.1)" class="w-full p-20 column br-10">
+        <div style="background:rgba(255,255,255,0.4);box-shadow:0 5px 5px rgba(255,255,255,0.1)" class="w-full p-20 column br-10">
             <span class="font-1">Deposit Balance</span>
             <strong style="font-size:2rem;">&#8358;{{ number_format(Auth::guard('users')->user()->deposit) }}</strong>
         </div>
@@ -53,20 +53,20 @@
             Deposit Amount <span>(Minimum &#8358;{{ number_format($auto[0]->price,2) }})</span>
         </div>
         {{-- AMOUNT INPUT --}}
-        <div style="border:1px solid rgba(0,0,0,0.3)" class="cont w-full border-1 h-50 br-5 row align-center">
+        <div style="border:1px solid rgba(255,255,255,0.3)" class="cont w-full border-1 h-50 br-5 row align-center">
           <div class="h-full column align-center justify-center perfect-square">
               <strong class="c-primary desc">
                 &#8358;
             </strong>
           </div>
-           <input type="number" name="amount" placeholder="Enter Amount" class="w-full h-full border-none br-inherit">
+           <input type="number" name="amount" placeholder="Enter Amount" class="w-full h-full bg-transparent border-none br-inherit">
         </div>
         {{-- QUICK SELECT --}}
         <span class="desc">Quick Select</span>
         <div class="grid w-full grid-3 g-10 place-center">
             @foreach ($auto as $data)
             {{-- SELECTORS LOOP IN QUICK SELECT --}}
-            <div onclick="MyFunc.QuickSelect('{{ $data->price }}')" style="border:1px solid rgba(0,0,0,0.4)" class="w-full no-select pc-pointer br-10 p-10 column justify-center">
+            <div onclick="MyFunc.QuickSelect('{{ $data->price }}')" style="border:1px solid rgba(255,255,255,0.4)" class="w-full no-select pc-pointer br-10 p-10 column justify-center">
                 &#8358;{{ number_format($data->price,2) }}
             </div>
                 

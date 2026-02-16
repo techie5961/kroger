@@ -20,37 +20,46 @@
                     </div>
                 </label>
                 <input onchange="PreviewPhoto(this,document.querySelector('label[for=photo]'))" type="file" accept="image/*" name="photo" id="photo" class="file display-none">
-                <label class="top-10" for="">Product Name</label>
+                <label class="m-top-10" for="">Product Name</label>
                 <div class="cont required">
-                    <input value="{{ $product->name }}" type="text" placeholder="E.g Bronze Product" name="name" class="inp input">
+                    <input value="{{ $product->name }}" type="text" placeholder="E.g Bronze Product" name="name" class="inp input required">
                     @include('components.sections',[
                         'required' => 'true'
                     ])
                 </div>
-                 <label class="top-10" for="">Product Price (&#8358;)</label>
+                 <label class="m-top-10" for="">Product Price (&#8358;)</label>
                 <div class="cont required">
-                    <input value="{{ $product->price }}" type="number" step="any" placeholder="E.g 100000" name="price" class="inp input">
+                    <input value="{{ $product->price }}" type="number" step="any" placeholder="E.g 100000" name="price" class="inp input required">
                      @include('components.sections',[
                         'required' => 'true'
                     ])
                 </div>
-                <label class="top-10" for="">Daily Return (&#8358;)</label>
+                <label class="m-top-10" for="">Daily Return (&#8358;)</label>
                 <div class="cont required">
-                    <input value="{{ $product->return }}" type="number" step="any" placeholder="E.g 500" name="return" class="inp input">
+                    <input value="{{ $product->return }}" type="number" step="any" placeholder="E.g 500" name="return" class="inp input required">
                      @include('components.sections',[
                         'required' => 'true'
                     ])
                 </div>
-                <label class="top-10" for="">Product Validity (days)</label>
+                <label class="m-top-10" for="">Product Validity (days)</label>
                 <div class="cont required">
-                    <input value="{{ $product->validity }}" type="number" placeholder="E.g 25" name="validity" class="inp input">
+                    <input value="{{ $product->validity }}" type="number" placeholder="E.g 25" name="validity" class="inp input required">
                      @include('components.sections',[
                         'required' => 'true'
                     ])
                 </div>
-                   <label class="top-10" for="">Purchase Limit</label>
+                 @if (config('settings.referral') == 'package_based')
+                       <label class="m-top-10" for="">Referral Commission (&#8358;)</label>
                 <div class="cont required">
-                    <input type="number" value="{{ $product->limit }}" placeholder="E.g 25" name="limit" class="inp input">
+                    <input type="number" placeholder="E.g 500" name="referral_commission" class="inp input required">
+                     @include('components.sections',[
+                        'required' => 'true'
+                    ])
+                </div>
+                 @endif
+                   <label class="m-top-10" for="">Purchase Limit</label>
+                <div class="cont required">
+                    <input type="number" value="{{ $product->limit }}" placeholder="E.g 25" name="limit" class="inp input required">
                      @include('components.sections',[
                         'required' => 'true'
                     ])

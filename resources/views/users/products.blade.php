@@ -31,7 +31,7 @@
                 
                 @foreach ($products as $data)
                     {{-- PRODUCT --}}
-        <div style="box-shadow:0 0 10px rgba(0,0,0,0.1)" class="w-full br-10 bg-light column g-10 p-10">
+        <div style="box-shadow:0 0 10px rgba(255,255,255,0.1)" class="w-full br-10 bg-light column g-10 p-10">
               {{-- PRODUCT NAME --}}
             <div class="row w-full align-center g-10 space-between">
             <strong class="font-1">{{ $data->json->name }}</strong>

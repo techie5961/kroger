@@ -14,8 +14,8 @@
        .absolute-div{
        
         border-radius:10px;
-        background:white;
-        box-shadow:5px 5px 5px rgba(0,0,0,0.1);
+        background:var(--bg-light);
+        box-shadow:5px 5px 5px rgba(255,255,255,0.1);
         display:grid;
         grid-template-columns:repeat(2,1fr);
         gap:10px;
@@ -33,11 +33,11 @@
     <div class="w-full relative-parent bg-primary g-20 primary-text p-10 column align-center">
         {{-- GRETTNGS --}}
         <div class="column p-10 align-center g-10 justify-center">
-            <strong style="font-size:2rem;">Hi, {{ Auth::guard('users')->user()->mobile }}</strong>
+            <strong style="font-size:2rem;">Hi, {{ ucfirst(Auth::guard('users')->user()->username) }}</strong>
             <span>Welcome back</span>
         </div>
         {{-- BALANCE --}}
-         <div style="background:rgba(255,255,255,0.3);box-shadow:5px 5px 5px rgba(0,0,0,0.1)" class="w-full m-top-10 br-10 column g-10 p-10">
+         <div style="background:rgba(255,255,255,0.3);box-shadow:5px 5px 5px rgba(255,255,255,0.1)" class="w-full m-top-10 br-10 column g-10 p-10">
             <span>Available Balance</span>
             <strong class="desc">&#8358;{{ number_format(Auth::guard('users')->user()->deposit + Auth::guard('users')->user()->withdrawal,2) }}</strong>
         </div>
@@ -68,7 +68,7 @@
     <div class="column g-10 p-10">
          <div class="w-full bg-light br-10 column g-10">
         {{-- ACCOUNT --}}
-        <div style="border-bottom:1px solid rgba(0,0,0,0.1)" class="w-full column p-10">
+        <div style="border-bottom:1px solid rgba(255,255,255,0.1)" class="w-full column p-10">
             <strong class="desc opacity-07">MY ACCOUNT</strong>
             {{-- MY PRODUCT --}}
             <div onclick="spa(event,'{{ url('users/products') }}')" class="p-10 no-select pc-pointer g-10 row align-center">
@@ -104,7 +104,7 @@
             </div>
         </div>
          {{-- TRANSACTIONS --}}
-        <div style="border-bottom:1px solid rgba(0,0,0,0.1)" class="w-full column p-10">
+        <div style="border-bottom:1px solid rgba(255,255,255,0.1)" class="w-full column p-10">
             <strong class="desc opacity-07">TRANSACTIONS</strong>
             {{-- TRANSACTION HISTORY --}}
             <div  onclick="spa(event,'{{ url('users/transactions') }}')" class="p-10 no-select pc-pointer g-10 row align-center">
@@ -145,7 +145,7 @@
             </div>
         </div>
          {{-- PLATFORM/COMPANY --}}
-        <div style="border-bottom:1px solid rgba(0,0,0,0.1)" class="w-full column p-10">
+        <div style="border-bottom:1px solid rgba(255,255,255,0.1)" class="w-full column p-10">
             <strong class="desc opacity-07">COMPANY</strong>
             {{-- ABOUT US --}}
             <div  onclick="spa(event,'{{ url('users/about') }}')" class="p-10 no-select pc-pointer g-10 row align-center">

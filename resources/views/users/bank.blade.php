@@ -8,7 +8,7 @@
         padding:0;
       }
       .cont{
-        border:1px solid rgba(0,0,0,0.1) !important;
+        border:1px solid rgba(255,255,255,0.1) !important;
         background:var(--bg) !important;
         border-radius:10px !important;
       }
@@ -28,7 +28,7 @@
      
         {{-- BODY --}}
         <div class="w-full column align-center p-10 g-10">
-           <form style="box-shadow:5px 5px 10px rgba(0,0,0,0.1)" onsubmit="PostRequest(event,this,MyFunc.Linked)" action="{{ url()->to('users/post/bank/update/process') }}" method="POST" class="column w-full bg-light br-10  max-w-500 g-10 p-10 flex-auto">
+           <form style="box-shadow:5px 5px 10px rgba(255,255,255,0.1)" onsubmit="PostRequest(event,this,MyFunc.Linked)" action="{{ url()->to('users/post/bank/update/process') }}" method="POST" class="column w-full bg-light br-10  max-w-500 g-10 p-10 flex-auto">
         <input type="hidden" class="input" name="_token" value="{{ csrf_token() }}">
       {{-- NEW INPUT --}}
         <div class="column g-5 w-full">

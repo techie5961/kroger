@@ -176,6 +176,9 @@ class AdminsPostRequestController extends Controller
             'return' => request()->input('return'),
             'validity' => request()->input('validity'),
             'limit' => request()->input('limit'),
+            'json' => json_encode([
+                'referral_commission' => request('referral_commission') ?? ''
+            ]),
             'updated' => Carbon::now(),
             'date' => Carbon::now()
         ]);
@@ -198,6 +201,9 @@ class AdminsPostRequestController extends Controller
             'price' => request()->input('price'),
             'return' => request()->input('return'),
             'validity' => request()->input('validity'),
+            'json' => json_encode([
+                'referral_commission' => request('referral_commission') ?? ''
+            ]),
             'updated' => Carbon::now(),
             'limit' => request()->input('limit'),
             'date' => Carbon::now()
@@ -217,6 +223,9 @@ class AdminsPostRequestController extends Controller
             'return' => request()->input('return'),
             'validity' => request()->input('validity'),
              'limit' => request()->input('limit'),
+             'json' => json_encode([
+                'referral_commission' => request('referral_commission') ?? ''
+            ]),
             'updated' => Carbon::now(),
             'date' => Carbon::now()
         ]);

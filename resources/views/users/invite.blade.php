@@ -22,7 +22,7 @@
     right:20px;
     border-radius:20px;
     top:calc(100% - 30px);
-    background:white;
+    background:var(--bg-light);
     padding:20px;
     display:flex;
     flex-direction:column;
@@ -49,10 +49,10 @@
             {{-- REFERRAL TOOLS --}}
             <strong class="desc">Your Referral Tools</strong>
             {{-- REFERRAL CODE --}}
-            <div style="border:1px solid rgba(0,0,0,0.1);background:rgba(0,0,0,0.05)" class="g-10 align-center w-full br-5 p-10 column g-10">
+            <div style="border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.05)" class="g-10 align-center w-full br-5 p-10 column g-10">
                 <span>Your Invite Code</span>
                 {{-- INVITE CODE --}}
-                <div style="border:1px solid rgba(0,0,0,0.1)" class="h-50 p-10 row space-between align-center w-full bg-light br-5">
+                <div style="border:1px solid rgba(255,255,255,0.1)" class="h-50 p-10 row space-between align-center w-full bg-light br-5">
                     <div class="w-full no-scrollbar overflow-hidden h-full row align-center">
                         <strong class="desc">{{ Auth::guard('users')->user()->uniqid }}</strong>
                     </div>
@@ -64,10 +64,10 @@
                 <div onclick="copy('{{ Auth::guard('users')->user()->uniqid }}')" class="br-5 p-10 align-center no-select pointer justify-center row  w-full primary-text bg-primary">Copy Code</div>
             </div>
              {{-- REFERRAL LINK --}}
-            <div style="border:1px solid rgba(0,0,0,0.1);background:rgba(0,0,0,0.05)" class="align-center w-full br-5 p-10 column g-10">
+            <div style="border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.05)" class="align-center w-full br-5 p-10 column g-10">
                 <span>Your Invite Link</span>
                 {{-- INVITE LINK --}}
-                <div style="border:1px solid rgba(0,0,0,0.1)" class="h-50 g-10 p-10 row space-between align-center w-full bg-light br-5">
+                <div style="border:1px solid rgba(255,255,255,0.1)" class="h-50 g-10 p-10 row space-between align-center w-full bg-light br-5">
                     <div class="w-full no-scrollbar overflow-hidden h-full row align-center">
                         <span style="font-family:monospace" class="ws-nowrap">{{ url('register').'?ref='.Auth::guard('users')->user()->uniqid }}</span>
                     </div>
@@ -87,6 +87,9 @@
         </div>
         {{-- BODY --}}
        <div class="column p-20 g-10">
+      @if (config('settings.referral') == 'package_based')
+          <img src="{{ asset('banners/7797d84f-c66c-436f-9b25-16032888b615.jpeg') }}" alt="" class="w-full br-10 max-w-500 m-x-auto">
+      @else
         {{-- EARNING STRUCTURE --}}
          <div style="box-shadow:5px 5px rgba(0,0,0,0,0.1)" class="w-full m-x-auto max-w-500 br-10 bg-light column align-center g-10 p-10">
             <strong class="desc">Your Earnings Structure</strong>
@@ -156,6 +159,7 @@
           </div>
             
         </div>
+      @endif
        </div>
 @endsection
 @section('js')

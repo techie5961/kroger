@@ -13,9 +13,9 @@
 @section('main')
   <section class="w-full column p-10 g-10">
     {{-- BANNER --}}
-<img style="box-shadow:0 0 10px rgba(0,0,0,0.1)" src="{{ asset('banners/'.$banner_settings->earning_structure.'') }}" alt="Earning Structure Banner" class="w-full m-x-auto box-shadow max-w-500 br-10">
+<img style="box-shadow:0 0 10px rgba(255,255,255,0.1)" src="{{ asset('banners/'.$banner_settings->earning_structure.'') }}" alt="Earning Structure Banner" class="w-full m-x-auto box-shadow max-w-500 br-10">
  {{-- NAVS --}}
- <div style="box-shadow:0 0 10px rgba(0,0,0,0.1)" class="w-full navs row p-10 br-10 g-10 bg-light">
+ <div style="box-shadow:0 0 10px rgba(255,255,255,0.1)" class="w-full navs row p-10 br-10 g-10 bg-light">
     {{-- NAV --}}
     <div onclick="spa(event,'{{ url('users/deposit') }}')" style="min-height=100% !important;max-width:25% !important;background: black;color:white" class="w-full nav h-full p-5 br-10 column g-10 justify-center align-center">
         <div style="background:rgba(255,255,255,0.2);color:white;" class="circle p-10 perfect-square column justify-center">
@@ -57,7 +57,7 @@
     <div class="w-full grid pc-grid-2 g-10 place-center">
     @foreach ($products as $data)
     {{-- PRODUCT --}}
-        <div style="box-shadow:0 0 10px rgba(0,0,0,0.1)" class="w-full br-10 bg-light column g-10 p-10">
+        <div style="box-shadow:0 0 10px rgba(255,255,255,0.1)" class="w-full br-10 bg-light column g-10 p-10">
             {{-- PRODUCT BANNER --}}
             <img style="margin-bottom:10px;max-height:100px;" src="{{ asset('products/'.$data->photo.'') }}" alt="{{ $data->name }} Display Photo" class="w-full br-10">
         {{-- PRODUCT NAME/PRICE --}}
@@ -97,12 +97,12 @@
     {{-- HEADER --}}
     <div class="row p-10 w-full align-center space-between g-10">
         <strong class="desc">Confirm Purchase</strong>
-        <div onclick="HideSlideUp()" class="h-40 w-40 column no-select clip-circle pc-pointer justify-center align-center circle" style="background:rgba(0,0,0,0.1)">
+        <div onclick="HideSlideUp()" class="h-40 w-40 column no-select clip-circle pc-pointer justify-center align-center circle" style="background:rgba(255,255,255,0.1)">
             <strong class="desc">&times;</strong>
         </div>
     </div>
     {{-- BODY --}}
-    <div style="box-shadow:0 0 10px rgba(0,0,0,0.1)" class="w-full bg-light p-10 br-10 column g-10">
+    <div style="box-shadow:0 0 10px rgba(255,255,255,0.1)" class="w-full bg-light p-10 br-10 column g-10">
       {{-- PRODUCT NAMING --}}
         <div class="row align-center g-10 w-full">
          <div class="h-50 w-50 column justify-center br-10 primary-text no-shrink bg-primary">

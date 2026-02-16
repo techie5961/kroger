@@ -38,7 +38,7 @@
 <link rel="stylesheet" href="{{ asset('vitecss/fonts/fonts.css?v='.config('versions.vite_version').'') }}">
     <link rel="stylesheet" href="{{ asset('vitecss/css/app.css?v='.config('versions.vite_version').'') }}">
   <link rel="stylesheet" href="{{ asset('css/styles.css?v='.config('versions.styles_version').'') }}">
-  <link rel="stylesheet" href="{{ asset('css/users/auth.css?v=2.6') }}">
+  <link rel="stylesheet" href="{{ asset('css/users/auth.css?v=2.7') }}">
 
 </head>
 

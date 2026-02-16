@@ -45,6 +45,19 @@
                 <span class="text-light m-left-auto">Created On</span>
             </div>
         </div>
+      
+        @if (config('settings.referral') == 'package_based')
+             <div class="row space-between w-full g-10 align-center">
+            <div class="column">
+                <strong class="c-primary">&#8358;{{ number_format(json_decode($data->json)->referral_commission ?? 0,2) }}</strong>
+                <span class="text-light">Referral Commission</span>
+            </div>
+               <div class="column display-none">
+                <strong class="c-primary m-left-auto">{{ $data->date }}</strong>
+                <span class="text-light m-left-auto">Last Updated</span>
+            </div>
+        </div>
+        @endif
         <hr class="gradient">
         <div class="row space-between w-full g-10">
             <button onclick="DeleteProduct('{{ url('admins/product/delete?id='.$data->id.'') }}')" class="btn-red h-50 c-white">Delete Product</button>

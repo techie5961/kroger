@@ -37,7 +37,7 @@
                     <span>Investments</span>
                 </div>
                 @foreach ($referrals as $data)
-                    <div style="box-shadow:5px 5px 5px rgba(0,0,0,0.1)" class="p-10 br-10 bg-light column g-10">
+                    <div style="box-shadow:5px 5px 5px rgba(255,255,255,0.1)" class="p-10 br-10 bg-light column g-10">
                         <div class="row w-full g-10 align-center space-between">
                             <div class="row align-center g-10">
                                 <div class="w-40 h-40 bold c-primary font-1 justify-center circle no-shrink bg-primary-transparent column no-select align-center space-between">

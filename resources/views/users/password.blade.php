@@ -5,7 +5,7 @@
         padding:0;
        } 
        .cont{
-        border:1px solid rgba(0,0,0,0.1) !important;
+        border:1px solid rgba(255,255,255,0.1) !important;
         background:transparent !important;
         border-radius:5px !important;
        }

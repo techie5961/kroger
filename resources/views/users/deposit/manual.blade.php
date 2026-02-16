@@ -79,14 +79,14 @@
                 {{-- NEW INPUT --}}
                 <div class="column g-5">
                       <label for="">Sender Name</label>
-                    <div style="border:1px solid rgba(0,0,0,0.1)" class="cont w-full h-50 br-10">
+                    <div style="border:1px solid rgba(255,255,255,0.1)" class="cont w-full h-50 br-10">
                         <input placeholder="Sender Name" type="text" name="account_name" id="" class="input inp required w-full border-none bg-transparent">
                     </div>
                 </div>
                  {{-- NEW INPUT --}}
                 <div class="column g-5">
                     <label for="">Payment Receipt/Screenshot</label>
-                    <div style="border:1px solid rgba(0,0,0,0.1)" class="cont w-full h-50 br-10">
+                    <div style="border:1px solid rgba(255,255,255,0.1)" class="cont w-full h-50 br-10">
                         <input type="file" accept="image/*" name="receipt" class="input inp required w-full border-none bg-transparent">
                     </div>
                 </div>

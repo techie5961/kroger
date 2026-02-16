@@ -216,7 +216,9 @@ class UsersGetRequestController extends Controller
             if(trim(Auth::guard('users')->user()->ref) !== ''){
                 $ref=Auth::guard('users')->user()->ref;
                 $first_level=($referral_settings->first_level*$product->price)/100;
-              
+                if(config('settings.referral') == 'package_based'){
+                    $first_level=json_decode($product->json)->referral_commission ?? 0;
+                }
                 DB::table('users')->where('username',$ref)->update([
                     'withdrawal' => DB::raw('withdrawal + '.$first_level.'')
                 ]);
@@ -236,7 +238,7 @@ class UsersGetRequestController extends Controller
         ]);
         $referral=DB::table('users')->where('username',$ref)->first();
         $second=$referral->ref ?? '';
-       if(trim($second) !== ''){
+       if(trim($second) !== '' && config('settings.referral') !== 'package_based'){
         $second_level=($referral_settings->second_level * $product->price)/100;
            DB::table('users')->where('username',$second)->update([
                     'withdrawal' => DB::raw('withdrawal + '.$second_level.'')

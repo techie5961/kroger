@@ -49,7 +49,7 @@
         {{-- BODY --}}
         <div class="column body g-10 p-10">
             {{-- BREAKDOWN --}}
-            <div style="box-shadow:5px 5px 5px rgba(0,0,0,0.1)" class="p-20 br-10 bg-light g-10 row">
+            <div style="box-shadow:5px 5px 5px rgba(255,255,255,0.1)" class="p-20 br-10 bg-light g-10 row">
               {{-- TOTAL --}}
                 <div class="column g-10">
                   <span class="opacity-07">Total Transactions</span>
@@ -74,9 +74,9 @@
                 ])
             @else
                 @foreach ($trx as $data)
-             <div style="box-shadow:5px 5px 5px rgba(0,0,0,0.1)" class="p-10 br-10 bg-light column">
+             <div style="box-shadow:5px 5px 5px rgba(255,255,255,0.1)" class="p-10 br-10 bg-light column">
             {{-- NEW ROW --}}
-                <div style="border-bottom:1px solid rgba(0,0,0,0.1)" class="row align-center p-10 space-between w-full">
+                <div style="border-bottom:1px solid rgba(255,255,255,0.1)" class="row align-center p-10 space-between w-full">
                {{-- TRANSACTION ID --}}
                 <div class="column g-5">
                 <span class="opacity-07">Transaction ID</span>
@@ -91,7 +91,7 @@
             </div>
          
                 {{-- NEW ROW --}}
-               <div style="{{ isset($type) ? 'border-bottom:none;' : 'border-bottom:1px solid rgba(0,0,0,0.1)' }}" class="row align-center p-10 space-between w-full">
+               <div style="{{ isset($type) ? 'border-bottom:none;' : 'border-bottom:1px solid rgba(255,255,255,0.1)' }}" class="row align-center p-10 space-between w-full">
                {{-- DATE --}}
                <div class="row align-center g-2">
                 <span class="opacity-07">
