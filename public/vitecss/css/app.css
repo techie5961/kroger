@@ -1,14 +1,14 @@
 :root{
     /* primary color */
-    --primary:#0c84b8;
+    --primary:#1ed2d6;
     /* light primary color */
-    --primary-light:#1fa4de;
+    --primary-light:#b2feff;
     /* color on element with background as primary color */
-    --primary-text:white;
+    --primary-text:black;
     /* transparent of primary color */
     --primary-transparent:rgb(31, 164, 222,0.1);
     /* darker primary color */
-     --primary-dark:#234aa3;
+     --primary-dark:#04595a;
      /* secondary color */
     --secondary:#d40c64;
     /* secondary light */
